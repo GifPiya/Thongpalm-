@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thongpalm</title>
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <style>
+        body {
+            background-color: #000;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 15px;
+        }
+        h1 {
+            color: #ff8c00;
+            font-size: 2em;
+        }
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .menu-item {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .menu-item:hover {
+            transform: scale(1.0);
+        }
+        .menu-item a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            padding: 5px;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #555;
+        }
+        footer a {
+            color: #ff8c00;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Thongpalm</h1>
+        <br>
+        <h1>ทองปาล์มก๊วยเตี๋ยวต้มยำ</h1>
+    </header>
+
+    <div class="menu-container">
+
+        <div class="menu-item">
+            <a href="images/FB_IMG_1754651559551.jpg" data-fancybox="menu-gallery" data-caption="เมนูแนะนำ">
+                <img src="images/FB_IMG_1754651559551.jpg" alt="ชื่อเมนู ">
+                <h3>เมนูแนะนำ</h3>
+            </a>
+        </div>
+        
+        <div class="menu-item">
+            <a href="images/menu1-1.jpg" data-fancybox="menu1-gallery" data-caption="ชื่อเมนู 1">
+                <img src="images/menu1-1.jpg" alt="ชื่อเมนู 1 รูปที่ 1">
+                <h3>ก๊วยเตี๋ยวต้มยำ</h3>
+            </a>
+            <a href="images/menu1-2.jpg" data-fancybox="menu1-gallery" style="display:none;"></a>
+        </div>
+
+        <div class="menu-item">
+            <a href="images/menu2-1.jpg" data-fancybox="menu2-gallery" data-caption="ชื่อเมนู 2">
+                <img src="images/menu2-1.jpg" alt="ชื่อเมนู 2 รูปที่ 1">
+                <h3>อาหารตามสั่ง</h3>
+            </a>
+            <a href="images/menu2-2.jpg" data-fancybox="menu2-gallery" style="display:none;"></a>
+            <a href="images/menu2-3.jpg" data-fancybox="menu2-gallery" style="display:none;"></a>
+        </div>
+        
+        <div class="menu-item">
+            <a href="images/menu3-1.jpg" data-fancybox="menu3-gallery" data-caption="ชื่อเมนู 3">
+                <img src="images/menu3-1.jpg" alt="ชื่อเมนู 3 รูปที่ 1">
+                <h3>เมนูกับข้าว</h3>
+            </a>
+            <a href="images/menu3-2.jpg" data-fancybox="menu3-gallery" style="display:none;"></a>
+            <a href="images/menu3-3.jpg" data-fancybox="menu3-gallery" style="display:none;"></a>
+        </div>
+
+        <div class="menu-item">
+            <a href="images/menu4-1.jpg" data-fancybox="menu4-gallery" data-caption="ชื่อเมนู 4">
+                <img src="images/menu4-1.jpg" alt="ชื่อเมนู 4 รูปที่ 1">
+                <h3>อาหารทานเล่น</h3>
+            </a>
+        </div>
+
+        <div class="menu-item">
+            <a href="images/menu5-1.jpg" data-fancybox="menu5-gallery" data-caption="ชื่อเมนู 5">
+                <img src="images/menu5-1.jpg" alt="ชื่อเมนู 5">
+                <h3>ขนมหวาน</h3>
+            </a>
+            <a href="images/menu5-2.jpg" data-fancybox="menu5-gallery" style="display:none;"></a>
+            <a href="images/menu5-3.jpg" data-fancybox="menu5-gallery" style="display:none;"></a>
+        </div>
+
+        <div class="menu-item">
+            <a href="images/menu6-1.jpg" data-fancybox="menu6-gallery" data-caption="ชื่อเมนู 6">
+                <img src="images/menu6-1.jpg" alt="ชื่อเมนู 6">
+                <h3>เครื่องดื่ม</h3>
+            </a>
+        </div>
+
+    </div>
+
+    <footer>
+        <h2>ติดต่อเรา</h2>
+        <p>เบอร์โทรศัพท์: 08x-xxx-xxxx</p>
+        <p>Facebook: <a href="https://www.facebook.com/your-restaurant">ชื่อ Facebook ของร้าน</a></p>
+        <p>Line ID: @your_line_id</p>
+    </footer>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+</body>
+</html>
